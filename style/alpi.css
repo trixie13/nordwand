@@ -1,0 +1,70 @@
+
+/* ---- content ------ */
+.places .row{
+	margin-bottom: 20px;
+	height: 300px;
+}
+.place-icons{
+	background: #242729; /* dark gray */
+	height: 100%;
+	padding: 20px;
+}
+@media (max-width: 767px){
+	.place-icons{
+		height: auto;
+	}
+	.place-image{
+		height: auto;
+	}
+	.places div.container{
+		margin-bottom: 20px;
+	}
+}
+.place-icons svg{
+	margin: 20px;
+	height: 50px;
+    width: 50px;
+    fill: #eef2f4;
+    float: left;
+}
+.place-image{
+  background-image: url("../pics/pic2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  background-size: 100% auto;
+  height: 100%;
+  /*text css*/
+  padding: 50px;
+}
+@media only screen and (max-width: 770px){
+	.place-image{
+		background-attachment: local;
+	}
+}
+div.places div:nth-of-type(1) div.place-image{
+	background-image: url("../pics/matterhorn.jpg");
+	/*background-position: -200px -300px;*/
+	/* find a way to set it relative to containing element */
+}
+div.places div:nth-of-type(2) div.place-image{
+	background-image: url("../pics/dolomiti.jpg");
+	/*background-position: -250px 0px;*/
+
+}
+div.places div:nth-of-type(3) div.place-image{
+	background-image: url("../pics/dent-du-geant.jpg");
+	/*bakground-position: -200px -1000px;*/
+}
+.place-image h3{
+	text-align: left;
+	font-family: 'Kollektif';
+	font-size: 1.5em;
+	padding-bottom: 3px;
+}
+.place-description{
+	text-align: left;
+	font-family: 'Montserrat-Light';
+	font-size: 1.2em;
+}

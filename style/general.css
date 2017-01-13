@@ -1,0 +1,135 @@
+@font-face{ /* headings */
+   font-family: 'Norwester';
+   src: url("type/norwester.regular.otf") format("opentype");
+}
+@font-face{ /* basic text */
+  font-family: 'Montserrat-Light';
+  src: url("type/Montserrat-Light.otf") format("opentype");
+}
+@font-face{ /* small headings */
+  font-family: 'Kollektif';
+  src: url("type/Kollektif.ttf") format('truetype'),
+  url("type/Kollektif.otf") format('opentype');
+}
+
+/* css reset */
+* { 
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+/* end css reset */
+
+html {
+  font-family: 'Montserrat-Light';
+  background-color: #2f3337; /*normal gray*/
+}
+h1 {
+  font-family: 'Norwester';
+  text-transform: uppercase;
+}
+h3,h2{
+  font-family: 'Kollektif';
+}
+.visible{
+  display: all;
+}
+.invisible{
+  display: none;
+}
+
+/* --- breadcrumb ---- */
+.breadcrumb {
+  clear: both;
+  padding: 8px 15px;
+  margin: 20px 0px;
+  list-style: none;
+  background: #242729; /* dark bg gray */
+  border-radius: 4px;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #eef2f4; /* white */
+  content: "/\00a0";
+}
+.breadcrumb > .active {
+  color: #82868a; /* light text gray */
+}
+.breadcrumb{
+  clear:both;
+  margin-top:86px;
+}
+ /* --- end breadcrumb ---- */
+
+ 
+/* -------------------------------- */
+
+*:focus{
+  outline: none;
+}
+a:link {
+  color: #eef2f4; /* white */
+}
+a:visited {
+  color: #eef2f4;
+}
+a:hover { 
+  color: #82868a;
+}
+a:hover svg{
+  fill: #82868a; /* light text gray */
+}
+a:active { 
+  color: #82868a;
+}
+a:active svg{
+  fill: #82868a;
+}
+/* -------------------------------- */
+
+/* ----- scrollbar ---- */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.6); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgba(1,1,1,0.8); 
+}
+/* ---- end scrollbar ---- */
+
+/* ----  button styling ---- */
+.myButton {
+  background-color:#67ce00;
+  display:inline-block;
+  cursor:pointer;
+  border: none;
+  color:#ffffff;
+  font-size:1.12em;
+  font-family: 'Norwester';
+  padding:15px 50px;
+  text-decoration:none;
+  margin: 10px;
+}
+.myButton:hover {
+  background-color:#85d732;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+.myButton a:hover {
+  color: #eef2f4; /* white */
+}
+
+/* ---- button styling ---- */

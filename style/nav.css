@@ -1,0 +1,130 @@
+/*   -----   Fixed navigation bar   -----   */
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  font-family: 'Montserrat-Light';
+  color: #eef2f4;
+}
+nav.top-size{
+  height: 66px;
+  background-color: rgba(47,51,55,0.4); 
+}
+nav.scroll-size{
+  height: 50px;
+  background-color: rgba(47,51,55,0.6);
+}
+h1#brand{  
+  line-height: 60px;
+  height: 100%;
+  width: auto;
+  float: left;
+  margin: 5px 10px;
+}
+nav.scroll-size #brand{
+  line-height: 44px;
+}
+nav ul{ 
+  float: right;
+}
+nav li {
+   float: left;
+   padding: 3px 20px;
+   margin-left: 5px;
+   text-decoration: none;
+   line-height: 60px;
+}
+nav li a{
+  display: block;
+  text-decoration: none;
+}
+nav.scroll-size li{
+  line-height: 44px;
+}
+/*   -----   search svg + input   -----   */  
+input[type=text]
+{ 
+  padding: 0px;
+  border: 0px;
+  background-color: rgba(0,0,0,0);
+  color: #eef2f4; /* white */
+  line-height: 100%;
+  font-family: 'Montserrat-Light';
+}
+::placeholder{
+  color: #eef2f4;
+  line-height: 100%;
+  font-family: 'Montserrat-Light';
+}
+nav button {
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    vertical-align: middle;
+}
+button svg{
+  fill: #eef2f4; /* white */
+  height: 20px;
+  width: auto;
+  margin-right: 10px; 
+}
+button:hover svg{
+	fill: #82868a; /* light text gray */;
+}
+/*   -----   end search svg + input   -----   */ 
+/*   -----   media queries for menu display   -----   */
+/* until 1150 menu button not displayed (not even later) */
+@media (min-width: 1150px){
+	#menu li:last-child{
+		display: none;
+	}
+}
+/* from 940px to 1151px 
+     - everything is displayed (except menu button - last item)
+     - search box jumps on next line if oppened;
+*/
+@media (min-width: 1000px) and (max-width: 1151px){
+	.jump-next-line{
+		clear:both;
+		float:right;
+    display:block;
+    line-height: 30px;
+    background-color: rgba(47,51,55,0.6);
+	}
+	#menu li:last-child{
+		display: none;
+	}
+}
+/* from 999px to 495px:
+     - menu button is displayed
+     - search does NOT jump lower anymore */
+@media (max-width: 999px){
+  #menu li:nth-last-child(n+3){
+    display:none;
+  }
+	#menu li.display {
+    display:block;
+		clear: both;
+		float:left;
+		width: 100%;
+    background-color: rgba(47,51,55,0.8);
+	}
+  #menu li.display:last-child{
+    display:none;
+  }
+}
+/* from 495px and below:
+     - only menu button is displayed
+     - search is first button in menu display; */
+@media (max-width: 495px){
+	#menu li:nth-last-child(2){
+		display:none;
+	}
+}
+/*   -----   end media queries for menu display   -----   */
+/*   -----   end fixed nav bar   -----   */

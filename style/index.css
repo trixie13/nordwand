@@ -1,0 +1,157 @@
+
+/* this will remain only in index.html 
+place index.style.css below style.css */
+.breadcrumb {
+  margin-top: 86px;
+}
+/* ---- end breadcrumb ---- */
+
+/* --- hero section --- */
+/*@media (min-width: 1300px){
+  #hero{
+      background-size: 100%;
+  }
+} 
+@media (min-width: 800px && max-width: 1299px){
+  #hero{
+      background-size: 180%;
+    }
+}  tablet 
+@media (min-width: 650px){
+  #hero{
+    background-size: 150%;
+  }
+} 
+@media (min-width: 320px && max-width: 500px){
+    #hero{
+      background-size: 100% auto;
+      background-position: -500px -500px;
+    }
+} */
+#hero{
+  background-image: url("../pics/pic3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+ /* background-size: auto 100%;
+  background-position: -150px -100px;*/
+  
+  overflow: hidden;
+  text-align: center;
+}
+@media (min-width: 1501px){
+  #hero{
+    background-size: auto 300%;
+    background-position: -400px;
+  }
+}
+@media (min-width: 1119px) and (max-width: 1500px){
+  #hero{
+    background-size: auto 200%;
+    background-position: 0px -200px;
+  }
+} 
+@media (min-width: 10px) and (max-width: 429px){
+  #hero{
+    background-size: auto 100%; 
+    background-position: -300px -150px;
+  }
+}
+@media (min-width: 430px) and (max-width: 548px){
+    #hero{
+      background-size: auto 100%;
+      background-position: -150px -50px;
+    }
+} 
+@media (min-width: 549px) and (max-width: 1120px){
+  #hero{
+    background-size: auto 150%;
+    background-position: 0px -50px;
+
+  }
+}
+section#hero h2{
+  font-family: 'Norwester';
+  font-size: 2em;
+  padding: 4em 0.5em 1em 0.5em;
+  color: #eef2f4;  white ;
+}
+section#hero p{
+  font-family: 'Montserrat-Light';
+  padding: 0em 0.5em 8em 0.5em;
+  color: #eef2f4; /* white */
+}
+/* --- end hero section --- */
+/* --- about me section --- */
+section#about-me{
+  background: #242729; /* dark gray */
+  color: #eef2f4; /* white */
+  text-align: center;
+  font-family: 'Montserrat-Light';
+  padding: 30px 20px;
+}
+section#about-me h2{
+  font-family: 'norwester';
+  font-size: 2em;
+  padding: 10px;
+}
+
+/* --- end about me section --- */
+/* --- PLACES section --- */
+h2#places{
+  font-family: 'Norwester';
+  padding: 30px 0px;
+  margin: 20px;
+  text-align: center;
+  color: #eef2f4;
+  font-size: 2em;
+}
+img { 
+  width: 100%;
+  max-width: 770px;
+  height: auto;
+  max-height: 365px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+div.picture{
+  height: 365px;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  float:none;
+}
+div.picture h3{
+  font-family: 'Montserrat-Light';
+  color: #eef2f4;
+  font-size: 1.5em;
+  display: inline-block;
+  height: 365;
+  width: 100%;
+  line-height: 365px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  left: 15px;
+  top: 0; 
+  margin-right: -15px;
+}
+/*div.picture div{
+  /*width: 540px;
+  height: 365px;*
+  position: absolute;
+  left: 15px;
+  top: 0;
+  margin-right: -15px;
+  background-color: rgba(0,0,0,0);
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+div.picture div:hover { 
+  background-color: rgba(47,51,55,0.4);}*/
+/* ---- end PLACES section ----- */
+
+
+
+

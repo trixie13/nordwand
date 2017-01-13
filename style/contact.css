@@ -1,0 +1,126 @@
+form {
+  color: #eef2f4; /* white */
+  margin-top: 30px;
+}
+
+/* --- general design for input --- */
+input{
+  margin: 0px 0px 10px 5px;
+  border: none;
+  border-radius: 3px;
+  font-size:1em;
+  padding: 10px 20px;
+  background-color: #eef2f4; /* white */
+  color: #242729; /* dark gray */
+}
+input:focus{
+  color: #eef2f4; /* white */
+  background-color: #242729; /* dark gray */
+}
+input[type=email]:focus{
+    color: #eef2f4; /* white */
+    background-color: #242729; /* dark gray */
+}
+fieldset{
+  margin-bottom: 30px;
+  border: none;
+}
+.margin-left{
+  margin-left:20px;
+}
+
+@media only screen and (max-width: 675px){
+  .margin-left{
+    margin-left:0px;
+    /*at this size elements will stack and no margin left is needed*/
+  }
+}
+
+.visible {
+  display:inline-block;
+}
+.invisible {
+  display: none;
+}
+
+
+
+
+
+/* --- specific designs ---*/ 
+input[type="submit"]{
+  display: inline-block;
+  margin: 0 auto;
+
+  /*alling with flex*/
+  align-items: flex-end;
+}
+
+input[type="text"],input[type="email"]{
+  background-color: #eef2f4; /* white */
+  padding: 10px;
+}
+
+input[type="email"] {
+  width: auto;
+}
+.message{
+  font-size: 1.12em;
+  margin-top: 30px;
+}
+.form-type{
+  margin-top: 20px;
+}
+
+/* --- textarea input ---*/
+textarea {
+  width: 80%;
+  height: 100px;
+  resize:none;
+  overflow-y: scroll;
+  margin: 20px 0px 10px 5px;
+  border: none;
+  border-radius: 3px;
+  font-size:1em;
+  padding: 10px 20px;
+  background-color: #eef2f4; /* white */
+  color: #242729; /* dark gray */
+  font-family: 'Montserrat-Light';
+}
+textarea:focus{
+  color: #eef2f4; /* white */
+  background-color: #242729; /* dark gray */
+}
+/* --- end textarea input ---*/
+
+/* --- checkboxes input --- */
+#checkboxes-message {
+    margin: 20px 0px 10px 5px;
+    width: 100%;
+}
+#checkboxes-message label{
+  margin-top: 50px;
+}
+#checkboxes-message legend{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.12em;
+}
+#checkboxes-message span{
+  height: 40px;
+}
+#checkboxes-message input[type="checkbox"]{
+  margin-top: 20px;
+}
+input[type="range"]{
+  background-color: rgba(0,0,0,0);
+}
+input[type="range"]:focus{
+  background-color: rgba(0,0,0,0);
+}
+
+.range-text {
+  word-wrap: break-word;
+}
+
+/* ---  end checkboxes input --- */

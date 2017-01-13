@@ -117,8 +117,7 @@ img {
 div.picture{
   height: 365px;
   overflow: hidden;
-  margin: 20px auto 0 auto;
-  float:none;
+  margin-top: 20px;
 }
 div.picture h3{
   font-family: 'Montserrat-Light';
